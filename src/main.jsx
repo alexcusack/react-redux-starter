@@ -1,15 +1,16 @@
 import * as redux from 'redux'
-import React, {Component} from 'react';
-import ReactDOM from 'react-dom';
+import ReduxThunk from 'redux-thunk'
+import React, {Component} from 'react'
+import ReactDOM from 'react-dom'
 import { main } from './redux/reducers'
 import * as actions from './redux/actions'
-import {Provider, connect} from 'react-redux';
+import {Provider, connect} from 'react-redux'
 import App from './ReactComponents/App'
 
-let store = redux.createStore(main)
+let store = redux.createStore(main, redux.applyMiddleware(ReduxThunk))
 
 store.dispatch.bind(store)
-global.store = store
+
 const Controller = connect(
   (state) => { return {...state} },
   (main) => { return {actions: redux.bindActionCreators(actions, main)} }

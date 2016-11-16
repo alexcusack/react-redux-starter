@@ -31,11 +31,14 @@
   },
   "homepage": "https://github.com/meetearnest/node-loantapes-ui#readme",
   "dependencies": {
+    "bluebird": "^3.4.6",
     "react": "^15.2.0",
     "react-datepicker": "^0.28.1",
     "react-dom": "^15.2.0",
     "react-redux": "^4.4.5",
     "redux": "^3.5.2",
+    "redux-thunk": "^2.1.0",
+    "request": "^2.78.0",
     "restify": "^4.3.0"
   },
   "devDependencies": {
