@@ -1,6 +1,10 @@
 # React-redux starter project
 
-A starter template for react-redux project. Makes view assumptions - just sets up a sample action and root reducer, a pingable HTTP server (`restify`), and configures the redux store.
+A starter template for react-redux project. Makes few assumptions: 
+* sets up a sample synchronous and asynchronous action
+* sets up the root reducer
+* a pingable HTTP server (using `restify`) that serves `index.html`
+* connects the redux store 
 
 ###Start
 1. Run `npm install`
