@@ -3,7 +3,7 @@ import React from 'react'
 export default class App extends React.Component {
   render () {
     const { message } = this.props
-    const {sampleAction, sampleAsycAction} = this.props.actions
+    const { sampleAction, sampleAsycAction } = this.props.actions
     const nextMessage = message === 'hello world (click me)' ?
                                       'Action ran' :
                                       'hello world (click me)'
